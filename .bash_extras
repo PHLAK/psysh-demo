@@ -1,0 +1,4 @@
+export PS1="🐳 \[\033[01;35m\]\w \[\033[01;30m\]\$\[\033[00m\] "
+
+source /etc/profile.d/bash_completion.sh
+source ${COMPOSER_HOME}/vendor/stecman/composer-bash-completion-plugin/hooks/bash-completion

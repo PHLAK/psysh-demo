@@ -1,0 +1,41 @@
+{
+    "name": "phlak/stash",
+    "description": "Simple PHP caching library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Kankiewicz",
+            "email": "Chris@ChrisKankiewicz.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/PHLAK/Stash/issues"
+    },
+    "require": {
+        "php": ">=7.0",
+        "nesbot/carbon": "^1.21 || ^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^1.0 || ^2.0",
+        "phpunit/phpunit": "^6.0 || ^7.0"
+    },
+    "suggest": {
+        "ext-apcu": "Required to use the APCu cache driver.",
+        "ext-memcached": "Required to use the Memcached driver.",
+        "ext-redis": "Required to use the Redis cache driver."
+    },
+    "autoload": {
+        "psr-4": {
+            "PHLAK\\Stash\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHLAK\\Stash\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

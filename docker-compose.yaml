@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  demo:
+    build:
+      context: .
+    depends_on:
+      - memcached
+      - redis
+
+    volumes:
+      - .:/root/demo
+    #   - ${COMPOSER_CACHE_DIR}:/root/.config/composer/cache
+
+  memcached:
+    image: memcached:1.5
+    
+  redis:
+    image: redis:5.0
