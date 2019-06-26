@@ -15,7 +15,7 @@ class RedisTest extends TestCase
     public function setUp()
     {
         $this->stash = new Stash\Drivers\Redis(function ($redis) {
-            $redis->pconnect('172.24.0.3', 6379);
+            $redis->pconnect('redis', 6379);
         });
     }
 
